@@ -11,34 +11,6 @@ p{
     font-size: 12px;
 }
 
-.title-section{
-    margin-left: 15px;
-    font-size: 24px;
-    margin-top: -19.92px;
-    padding-top: 60px;
-
-}
-
-.title-section2{
-    font-size: 24px;
-    margin-top: 50px;
-    margin-left: 15px;
-}
-
-.product-description{
-    font-size: 16px;
-    margin-left: 15px;
-}
-
-.discounts {
-    font-size: 16px;
-    margin-left: 15px;
-}
-
-.prices {
-    font-size: 18px;
-    margin-left: 15px;
-}
 
 header{
     background-color: #eac926;
@@ -47,6 +19,9 @@ header{
 
 .nav-link{
     padding-left: 2%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    line-height: 13px;
 }
 
 a{
@@ -56,7 +31,7 @@ a{
 }
 
 .logo img{
-    width: 120px;
+    width: 150px;
     margin: 20px;
 }
 
@@ -66,11 +41,13 @@ a{
 
 #message{
     text-align: center;
+    margin: 20px 0px;
 }
 
-.products img{
-    width: 90%;
+#message i{
+    padding-right: 5px;
 }
+
 
 .burger-menu{
     width: 40px;
@@ -78,6 +55,7 @@ a{
     color: #ebebeb;
     background-color: #1259c3;
     margin: auto;
+    margin-top: 20px; margin-bottom: 16px;
     text-align: center;
     border-radius: 10%;
     font-size: 20px;
@@ -87,10 +65,111 @@ a{
     margin: 10px;
 }
 
-main{
-    background-color: #ebebeb;
-    padding-bottom: 15px;
+
+
+/* div.logo{
+    display: inline-block; 
+    width: 160px;
+    height: 71.188px;
+} */
+
+.search-bar{
+    margin-left: 5px; margin-right: 5px;
+    padding-right: 100px;
+    background-color: whitesmoke;
+    border: solid black 1px;
 }
+
+.search-bar-cont i{
+    border: solid black 1px;
+    background-color: whitesmoke;
+    padding: 1.5px;
+    border-radius: 10%;
+}
+
+main{
+    margin: auto;
+    width: 90%;
+    background-color: #ebebeb;
+    padding-bottom: 5%;
+}
+
+.title-section{
+    margin-left: 15px;
+    font-size: 24px;
+    /* margin-top: -19.92px; */
+    padding-top: 40px;
+    width: 90%;
+    color: #666;
+    font-weight: bolder;
+    
+}
+
+.title-section2{
+    width: 90%;
+    font-size: 24px;
+    margin-top: 50px;
+    margin-left: 15px;
+    color: #666;
+}
+
+.product-description{
+    font-size: 16px;
+    margin-top: 10px;
+    color: #666;
+    margin-bottom: 10px;
+    /* margin-left: 15px; */
+}
+
+.discounts {
+    font-size: 16px;
+    margin-top: 0px;
+    color: #39b54a;
+    /* margin-left: 15px; */
+}
+
+.prices {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 1px;
+    /* margin-left: 15px; */
+}
+
+.products{
+    background-color: #ebebeb;
+}
+
+.products img{
+    width: 100%;
+    /* margin-left: 5%; */
+}
+
+.product-info{
+    background-color: white;
+    /* margin-left: 5%; margin-right: 5%; */
+    /* padding: 5px 20px; */
+    padding: 15px;
+}
+
+.product-info i{
+    width: 2.5em;
+    height: 2.5em;
+    border: solid #39b54a 1px;
+    /* padding: 10px; */
+    margin-top: 5px;
+    padding-top: 10px;
+    padding-left: 4px;
+    text-align: center;
+    border-radius: 100%;
+    background-color: white;
+    color: #39b54a;
+}
+
+article{
+    margin-bottom: 10px;
+    margin-left: 5%; margin-right: 5%;
+}
+
 
 footer{
     text-align: center;
@@ -101,7 +180,7 @@ footer{
     margin-top: 1%;
     line-height: 90%;
     margin-bottom: 25%;
-    color: #666666;
+    color: #666;
 }
 
 .independiente h4{
@@ -120,20 +199,22 @@ footer{
     color: #666;
 }
 
-div.logo{
-    display: inline-block;
-    width: 160px;
-    height: 71.188px;
+@media (max-width: 360px){
+    .product-description{
+        display: none;
+    }
+    header .nav-link{
+        display: none;
+    }
 }
 
-.search-bar{
-    margin-left: 5px;
-    margin-right: 200px;
-    background-color: whitesmoke;
-    border: solid black 1px;
+@media (min-width: 361px){
+    main article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
 }
 
-.search-bar i{
-    margin-left: 60px;
+@media (min-width: 769px){
+
 }
 
